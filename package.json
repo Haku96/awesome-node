@@ -1,0 +1,33 @@
+{
+  "name": "awesome-node",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.7.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Jerry",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.0",
+    "eslint": "catalog:",
+    "lint-staged": "^15.2.11",
+    "prettier": "catalog:",
+    "simple-git-hooks": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
+  }
+}
