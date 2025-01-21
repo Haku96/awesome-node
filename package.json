@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "packageManager": "pnpm@9.7.0",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [
     "node"
@@ -18,9 +17,11 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.12.0",
     "eslint": "catalog:",
+    "internal-ip": "^8.0.0",
     "lint-staged": "^15.2.11",
     "prettier": "catalog:",
-    "simple-git-hooks": "catalog:"
+    "simple-git-hooks": "catalog:",
+    "typescript": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

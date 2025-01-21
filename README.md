@@ -2,7 +2,10 @@
 
 ### 工具函数
 
-- .etc
+- [internal-ip](https://github.com/sindresorhus/internal-ip)
+- [internal-ip-cli](https://github.com/sindresorhus/internal-ip-cli)
+- [mitt](https://github.com/developit/mitt)，事件发布/订阅库
+- [meow](https://github.com/sindresorhus/meow)，命令行应用（internal-ip-cli）
 
 ### 待办事项
 
