@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "packageManager": "pnpm@9.7.0",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "push-after-commit": "git push"
   },
   "keywords": [
     "node"
@@ -25,7 +26,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
-    "post-commit": "git push"
+    "post-commit": "npm run push-after-commit"
   },
   "lint-staged": {
     "*.{js,ts,tsx,vue,md}": [
