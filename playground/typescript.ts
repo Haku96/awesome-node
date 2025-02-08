@@ -21,6 +21,10 @@ loggingIdentity({ length: 10, value: 'typescript' })
 // TypeScript 提供了一些内置的类型工具，用来方便地处理各种类型，以及生成新的类型
 // https://wangdoc.com/typescript/utility
 
+// Record<Keys, Type> 返回一个对象类型，参数Keys用作键名，参数Type用作键值类型。
+type T = Record<'a', number>
+const _a: T = { a: 1 }
+
 // class
 class Person {
   // 成员可以在类的内部和外部访问

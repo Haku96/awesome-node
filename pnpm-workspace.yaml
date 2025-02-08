@@ -1,5 +1,6 @@
 packages:
-  - 'packages/*'
+  - packages/*
+  - vitepress
 
 catalog:
   'eslint': '^9.17.0'

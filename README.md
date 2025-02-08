@@ -7,9 +7,11 @@
 - [mitt](https://github.com/developit/mitt)，事件发布/订阅库
 - [meow](https://github.com/sindresorhus/meow)，命令行应用（internal-ip-cli）
 - [simple-git-hooks](https://github1s.com/toplenboren/simple-git-hooks/tree/master)，git hooks 管理工具，注意每次修改或新增钩子后需要手动执行 `npx simple-git-hooks` 才会生效
+- execa，zx: 简化 Node.js 中的子进程管理和命令执行
 
 ### 待办事项
 
+- typescript 与 nodejs 入门使用，js 基础补充如数组方法，es6 常用内容
 - 快速创建工作区内容的脚本文件编写？
 - 如何快速将其它项目源码添加到项目？
 - .etc

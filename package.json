@@ -2,27 +2,38 @@
   "name": "awesome-node",
   "version": "1.0.0",
   "packageManager": "pnpm@9.7.0",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "push-after-commit": "git push"
-  },
+  "author": "Jerry",
+  "license": "MIT",
   "keywords": [
     "node"
   ],
-  "author": "Jerry",
-  "license": "MIT",
+  "sideEffects": false,
   "engines": {
     "node": ">=18.12.0"
   },
-  "sideEffects": false,
+  "scripts": {
+    "prepare": "npx simple-git-hooks",
+    "docs:build": "pnpm -F=vitepress build",
+    "docs:dev": "pnpm -F=vitepress dev",
+    "preinstall": "npx only-allow pnpm",
+    "push-after-commit": "git push",
+    "prezx": "pnpm --version",
+    "zx": "zx ./playground/zx.mjs"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^3.12.0",
     "eslint": "catalog:",
+    "execa": "^9.5.2",
+    "fast-glob": "^3.3.1",
     "internal-ip": "^8.0.0",
     "lint-staged": "^15.2.11",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.1.1",
     "prettier": "catalog:",
+    "prompts": "^2.4.2",
     "simple-git-hooks": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "zx": "^8.3.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
