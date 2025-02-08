@@ -40,8 +40,8 @@
     "post-commit": "npm run push-after-commit"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,vue,md}": [
-      "eslint --cache --fix"
+    "*.{js,mjs,ts,tsx,vue,md}": [
+      "prettier --write"
     ]
   }
 }
