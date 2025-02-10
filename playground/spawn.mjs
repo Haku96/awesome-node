@@ -1,10 +1,9 @@
 import { exec } from 'node:child_process'
 
-exec('ls -la', (error, stdout, stderr) => {
+exec('dir', (error, stdout) => {
   if (error) {
     console.error(`exec error: ${error}`)
     return
   }
   console.log(`stdout: ${stdout}`)
-  console.error(`stderr: ${stderr}`)
 })
