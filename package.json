@@ -22,6 +22,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.6.0",
     "eslint": "catalog:",
     "execa": "^9.5.2",
     "fast-glob": "^3.3.1",

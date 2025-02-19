@@ -1,0 +1,22 @@
+{
+  "name": "node-cli",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "cli app",
+  "author": "June",
+  "license": "MIT",
+  "keywords": [
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "node-cli": "./index.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "commander": "^13.1.0",
+    "figlet": "^1.8.0",
+    "inquirer": "^12.4.2",
+    "ora": "^8.2.0"
+  }
+}

@@ -4,7 +4,7 @@ function swap<T, U>(tuple: [T, U]): [U, T] {
 }
 
 // 自动推断类型
-let swapped = swap([7, 'seven'])
+const _swapped = swap([7, 'seven'])
 
 interface Lengthwise {
   length: number
@@ -58,7 +58,7 @@ class Person {
   }
 }
 
-class Employee extends Person {
+class _Employee extends Person {
   private employeeId: number
 
   constructor(name: string, age: number, address: string, employeeId: number) {
