@@ -13,8 +13,6 @@
   },
   "scripts": {
     "prepare": "npx simple-git-hooks",
-    "docs:build": "pnpm -F=vitepress build",
-    "docs:dev": "pnpm -F=vitepress dev",
     "preinstall": "npx only-allow pnpm",
     "push-after-commit": "git push",
     "prezx": "pnpm --version",
