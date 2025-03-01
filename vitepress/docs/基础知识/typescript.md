@@ -1,5 +1,6 @@
 ### 基础知识
 
+- Typescript = javascript + 类型 + babel
 - 类型断言（Type Assertion）可以用来手动指定一个值的类型 `值 as 类型` 或者 `<类型>值`
 - 类型推论：如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型
 
@@ -15,6 +16,7 @@
 - 注释指令：采用 JS 双斜杠注释的形式，向编译器发出的命令。[网道](https://wangdoc.com/typescript/comment)
 
 - [interface vs type](https://www.cnblogs.com/ygyy/p/18191941)
+- [深入理解 Typescript](https://jkchao.github.io/typescript-book-chinese/)
 
 ### 实例代码
 

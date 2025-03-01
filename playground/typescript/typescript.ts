@@ -15,7 +15,6 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
   return arg
 }
 
-loggingIdentity(3)
 loggingIdentity({ length: 10, value: 'typescript' })
 
 // TypeScript 提供了一些内置的类型工具，用来方便地处理各种类型，以及生成新的类型
@@ -74,3 +73,5 @@ class _Employee extends Person {
     return this.getAddress()
   }
 }
+
+fs.readFile(path.resolve(__dirname, 'file.text'), 'utf8', (err, data) => {})
