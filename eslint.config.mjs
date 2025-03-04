@@ -12,6 +12,7 @@ export default antfu(
       'node/prefer-global/process': 'off',
       'no-unused-vars': 'off',
       'style/brace-style': 'off',
+      'eslint-comments/no-unlimited-disable': 'off',
     },
   },
 )

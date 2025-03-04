@@ -73,5 +73,3 @@ class _Employee extends Person {
     return this.getAddress()
   }
 }
-
-fs.readFile(path.resolve(__dirname, 'file.text'), 'utf8', (err, data) => {})

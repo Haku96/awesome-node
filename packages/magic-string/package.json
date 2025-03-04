@@ -1,0 +1,14 @@
+{
+  "name": "magic-string",
+  "version": "1.0.0",
+  "description": "magic-string",
+  "author": "Jerry",
+  "license": "MIT",
+  "keywords": [
+    "magic-string"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ."
+  }
+}
