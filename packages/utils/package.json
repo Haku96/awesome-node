@@ -1,0 +1,50 @@
+{
+  "name": "@juney/utils",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.5.2",
+  "description": "Opinionated collection of common JavaScript / TypeScript utils by @antfu",
+  "author": "juney",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "utils"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && pnpm publish",
+    "start": "tsx src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^23.3.1",
+    "bumpp": "^10.0.3",
+    "lint-staged": "^15.4.3",
+    "simple-git-hooks": "^2.11.1",
+    "unbuild": "^3.5.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

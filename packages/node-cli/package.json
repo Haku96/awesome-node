@@ -10,7 +10,8 @@
   ],
   "main": "index.js",
   "bin": {
-    "node-cli": "./index.js"
+    "node-cli": "./index.js",
+    "pnpm-init": "./pnpm-init.mjs"
   },
   "scripts": {},
   "dependencies": {

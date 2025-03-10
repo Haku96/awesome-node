@@ -5,3 +5,8 @@
 ### 参考资料
 
 - [medium](https://egmz.medium.com/building-a-cli-with-node-js-in-2024-c278802a3ef5)
+
+### 待办事项
+
+- 补全 package.json 模板
+- .etc

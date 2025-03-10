@@ -17,7 +17,9 @@
     "preinstall": "npx only-allow pnpm",
     "push-after-commit": "git push",
     "prezx": "pnpm --version",
-    "zx": "zx ./playground/zx.mjs"
+    "zx": "zx ./playground/zx.mjs",
+    "pnpm:init": "node ./scripts/pnpm-init.mjs",
+    "unbuild:help": "unbuild --help"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.0",
