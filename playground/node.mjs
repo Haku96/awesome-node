@@ -1,5 +1,6 @@
 import path from 'node:path'
 import fs from 'fs-extra'
+import url from 'node:url'
 
 // node:url module provides utilities for URL resolution and parsing
 /**
@@ -18,3 +19,7 @@ const fooUrl = new URL(
   'https://www.example.com:8080/path/to/page?name=example#section1',
 )
 console.log('fooUrl', fooUrl)
+
+const importMeta = import.meta
+console.log(importMeta)
+console.log(url.fileURLToPath(importMeta.url))

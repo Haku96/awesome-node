@@ -13,7 +13,7 @@ export default defineBuildConfig({
   clean: true,
   hooks: {
     'build:before': ctx => {
-      console.log(ctx, '===> 时间')
+      console.log('build:before', ctx)
     },
   },
   rollup: {
